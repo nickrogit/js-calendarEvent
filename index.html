@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="utf-8">
+		<title>js日历事件</title>
+		<meta name="renderer" content="webkit|ie-comp|ie-stand" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="keywords" content="nickro" />
+		<meta name="description" content="js日历事件" />
+		<meta name="author" content="nickro" />
+		<meta name="copyright" content="js日历事件" />
+
+		<link rel="stylesheet" type="text/css" href="./css/index.css">
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="./js/index.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="ce-box">
+			<ul class="ce-week cl">
+          <li>周一</li>
+          <li>周二</li>
+          <li>周三</li>
+          <li>周四</li>
+          <li>周五</li>
+          <li>周六</li>
+          <li>周日</li>
+      </ul>
+      <ul class="cl ce-list" id="ce_list"></ul>
+		</div>
+		<script>
+		var datajson=[{date:"2018-01-28",text:"2018-01-28事件名称"},{date:"2018-01-02",text:"2018-01-02事件名称"}];
+		var el=$('#ce_list')
+		var This_year = This_time.getFullYear();
+		var This_month = This_time.getMonth() +1;
+		creatCe(el,datajson,This_year,This_month);
+
+		
+		</script>
+	</body>
+</html>
